@@ -1,0 +1,255 @@
+
+.section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* Otros estilos para las secciones */
+
+  /* Media query para pantallas más pequeñas */
+  @media (max-width: 768px) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* Ajustes específicos para pantallas más pequeñas */
+  }
+}
+
+.section-cards {
+  margin-top: 60px; /* Agrega margen arriba */
+  margin-bottom: 20px; /* Agrega margen abajo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ajusta según la altura deseada */
+
+  @media (max-width: 768px) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* Ajustes específicos para pantallas más pequeñas */
+  }
+}
+
+.container {
+  display: flex; /* Utiliza flexbox para alinear las tarjetas */
+  gap: 20px; /* Espacio entre las tarjetas */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Permite que las tarjetas se ajusten al ancho del contenedor */
+  max-width: 1200px;
+  padding: 0 15px;
+
+  @media (max-width: 768px) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* Ajustes específicos para pantallas más pequeñas */
+  }
+}
+
+.card {
+  width: 350px; /* Ancho deseado para las tarjetas */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: inline-block;
+  margin: 10px; /* Ajusta el margen */
+  transition: transform 0.5s ease, box-shadow 0.5s ease; /* Ajuste más suave en el tiempo de transición */
+
+  @media (max-width: 768px) {
+    width: 100%; /* Ajusta el ancho al 100% para ocupar todo el espacio disponible */
+    margin: 10px 0; /* Ajusta el margen */
+    /* Ajustes específicos para pantallas más pequeñas */
+}
+}
+
+.card-title{
+  text-align: center;
+}
+
+/* Efecto de hover para las tarjetas */
+.card:hover {
+  transform: scale(1.05); /* Cambio de tamaño más sutil */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al pasar el mouse */
+  opacity: 0.9; /* Reducción de opacidad al pasar el mouse */
+  cursor: default; /* Cambio del cursor al pasar el mouse sobre la tarjeta */
+}
+
+/* Estilos para las tarjetas sin hover */
+.card:not(:hover) {
+  opacity: 1; /* Opacidad normal */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra normal */
+}
+
+
+.cardH {
+ 
+  border-radius: 8px;
+
+  overflow: hidden;
+  margin: 20px;
+  width: auto;
+
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.card-image {
+  width: 50px; /* Ajusta el ancho de la imagen */
+  height: auto; /* Mantén la relación de aspecto */
+  margin-right: 10px; /* Añade margen a la derecha para separar la imagen del título */
+}
+
+
+.card-content {
+  padding: 16px;
+  text-align: center;
+}
+
+
+.card-tags {
+  margin-bottom: 8px;
+}
+
+.tag {
+ 
+  background-color: #007bff;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.h4 {
+  font-size: 1.5rem;
+  margin: 8px 0;
+}
+
+.card-footer {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #666;
+  gap: 5px;
+}
+
+.inline-flex {
+  display: inline-flex;
+  align-items: center;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+}
+
+.mr-1 {
+  margin-right: 1.5px;
+}
+
+.box-img-animate {
+  text-align: center;
+}
+
+.box-img-animate .box-img-animate-item {
+  display: inline-block;
+}
+
+.box-img-animate .box-img-animate-item img {
+  border-radius: 6px;
+  box-shadow: 8px 14px 40px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 1199.98px) {
+  .box-img-animate .box-img-animate-item + .box-img-animate-item {
+    margin-top: 20px;
+  }
+  .box-img-animate .box-img-animate-item {
+    padding: 0 15px;
+  }
+}
+
+.box-img-animate-item img {
+  transition: opacity 0.5s ease;
+}
+
+.box-img-animate-item img:hover {
+  opacity: 0.5; /* Cambia la opacidad al pasar el mouse */
+}
+
+
+.ver-mas-btn {
+  background-color: #445d2e; /* Color de fondo del botón */
+  color: white; /* Color del texto */
+  padding: 10px 20px; /* Espaciado interno */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Borde redondeado */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+
+  /* Estilos para el hover */
+  transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+/* Efecto de hover para el botón */
+.ver-mas-btn:hover {
+  background-color: #2d3e1f; /* Cambia el color de fondo en hover */
+}
+
+
+/*** service start ***/
+.service .service-item {
+  position: relative;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+}
+
+
+
+.service-content::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  bottom: auto;
+  background: var(--bs-dark);
+  border-radius: 8px;
+  transition: 1s;
+}
+
+
+
+
+.service-item:hover .service-content::after {
+  height: 100%;
+  opacity: 1;
+}
+
+.service-item .service-content-icon {
+  position: relative;
+  z-index: 2;
+}
+
+.service-item .service-content-icon i,
+.service-item .service-content-icon p {
+  transition: 1s;
+}
+
+.service-item:hover .service-content-icon i {
+  color: var(--white-color) !important;
+}
+
+.service-item:hover .service-content-icon p {
+  color: var(--white-color);
+}
+
+.service-item:hover .service-content-icon a.btn-primary {
+  background: var(--white-color);
+  color: var(--bs-dark);
+}
+
+.service-item .service-content-icon a.btn-primary {
+  transition: 1s !important;
+}
+/*** Services End ***/
+
