@@ -37,7 +37,7 @@ CREATE TABLE `actividad` (
   `capacidad` int NOT NULL,
   `estado` int NOT NULL DEFAULT '1',
   `idTipoActividad` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -55,7 +55,7 @@ CREATE TABLE `charla` (
   `capacidad` int NOT NULL,
   `status` int NOT NULL,
   `datacreated` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `charla`
@@ -80,7 +80,7 @@ CREATE TABLE `contacto` (
   `dispositivo` varchar(25) NOT NULL,
   `useragent` text NOT NULL,
   `datecreated` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `contacto`
@@ -105,7 +105,7 @@ CREATE TABLE `documentacionp` (
   `rutaP` varchar(255) NOT NULL,
   `status` int NOT NULL,
   `fechaDocP` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `documentacionp`
@@ -131,7 +131,7 @@ CREATE TABLE `documento` (
   `ruta` varchar(255) NOT NULL,
   `status` int NOT NULL DEFAULT '1',
   `fechaDocl` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -144,7 +144,7 @@ CREATE TABLE `modulo` (
   `titulo` varchar(50) NOT NULL,
   `descripcion` text NOT NULL,
   `status` int NOT NULL DEFAULT '1'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `modulo`
@@ -173,7 +173,7 @@ CREATE TABLE `permisos` (
   `w` int NOT NULL DEFAULT '0',
   `u` int NOT NULL DEFAULT '0',
   `d` int NOT NULL DEFAULT '0'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `permisos`
@@ -253,7 +253,7 @@ CREATE TABLE `persona` (
   `rolid` bigint NOT NULL,
   `datecreated` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `status` int NOT NULL DEFAULT '1'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `persona`
@@ -281,7 +281,7 @@ CREATE TABLE `post` (
   `datecreate` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `ruta` varchar(255) NOT NULL,
   `status` int NOT NULL DEFAULT '1'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `post`
@@ -318,7 +318,7 @@ CREATE TABLE `rol` (
   `nombrerol` varchar(50) NOT NULL,
   `descripcion` text NOT NULL,
   `status` int NOT NULL DEFAULT '1'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `rol`
@@ -344,7 +344,7 @@ CREATE TABLE `taller` (
   `capacidad` int NOT NULL,
   `status` int NOT NULL,
   `datacreated` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `taller`
@@ -369,7 +369,7 @@ CREATE TABLE `voluntariado` (
   `capacidad` int NOT NULL,
   `status` int NOT NULL,
   `datacreated` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `voluntariado`
@@ -392,14 +392,14 @@ CREATE TABLE `volunteers` (
   `email` varchar(250) NOT NULL,
   `address_volunteer` varchar(100) NOT NULL,
   `age_volunteer` int NOT NULL,
-  `general` varchar(2) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `actividad` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `general` varchar(2) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `actividad` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
   `mensaje` text NOT NULL,
   `ocupation_volunteer` varchar(100) DEFAULT NULL,
   `phone_number_volunteer` varchar(100) NOT NULL,
   `datecreated` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `Estado` varchar(100) NOT NULL DEFAULT 'Solicitud'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `volunteers`
