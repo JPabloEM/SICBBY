@@ -26,6 +26,7 @@ SET time_zone = "+00:00";
 --
 -- Estructura de tabla para la tabla `actividad`
 --
+use db_cbby;
 
 CREATE TABLE `actividad` (
   `idActividad` int NOT NULL,
